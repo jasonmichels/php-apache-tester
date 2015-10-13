@@ -1,4 +1,4 @@
-FROM jasonmichels/php-apache:5.6.9-apache
+FROM jasonmichels/php-apache:7-apache
 
 WORKDIR /tmp
 

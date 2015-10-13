@@ -1,15 +1,15 @@
 ## Docker PHP Apache Tester Image
-Docker PHP Apache tester image is used in conjuction with my PHP Apache 5.6.9-apache image. This image has Composer installed and is used for running one off commands to do things like migrate database and run unit tests.
+Docker PHP Apache tester image is used in conjuction with my PHP Apache 7-apache image. This image has Composer installed and is used for running one off commands to do things like migrate database and run unit tests.
 
 ### Build
 To build this image yourself from the code follow these command
 ```sh
-$ docker build -t <name>/php-apache-tester:5.6.9-apache .
+$ docker build -t <name>/php-apache-tester:7-apache .
 ```
 
 ### Demo Usage
 ```sh
-$ docker run --volumes-from data-container --link mysql:mysql --rm --name php-apache-tester <name>/php-apache-tester:5.6.9-apache php -v
+$ docker run --volumes-from data-container --link mysql:mysql --rm --name php-apache-tester <name>/php-apache-tester:7-apache php -v
 ```
 
 ### TODO
